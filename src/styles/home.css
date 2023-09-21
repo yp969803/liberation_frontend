@@ -1,0 +1,84 @@
+.example::-webkit-scrollbar {
+    display: none;
+  }
+  
+body {
+   
+    body {
+      overflow: hidden; /* Hide scrollbars */
+    }
+  }
+.corousel-padding{
+    height: 100vh;
+    min-height: 300px;
+
+}
+.corousel-padding{
+    bottom: 100px;
+    z-index: 2;
+}
+.corousel-caption h5{
+   font-size: 45px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-top: 25px;
+}
+
+.corousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.corousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#btn1{
+    color: white;
+    background-color: rgba(86, 108, 232, 1);
+    ;
+    border-radius: 50px;
+    padding:10px 30px;
+}
+
+@media only screen and (max-width: 767px){
+ 
+    .corousel-caption{
+        bottom: 125px;
+    }
+    .corousel-caption h5{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .corousel-caption a{
+        padding: 10px 15px;
+    }
+    .corousel-caption p{
+        width: 100%
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .corousel-caption{
+        bottom: 370px;
+
+    }
+    .corousel-caption p{
+        width: 100%;
+    }
+    .card{
+        margin-bottom: 30px;
+
+    }
+    .img-area img{
+        width: 100%;
+    }
+}
